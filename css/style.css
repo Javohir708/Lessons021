@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container {
+    max-width: 1232px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+img {
+    max-width: 100%;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+li {
+    list-style: none;
+}
+body {
+    background-color: #f8f9fe;
+}
+/* HEADER QISMI */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(253, 253, 253, 0);
+    z-index: 1000;
+    transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    backdrop-filter: blur(10px);
+    background-color: rgba(235, 229, 229, 0.64);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 10px;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.navbar__collection {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.navbar__link {
+    font-size: 14px;
+    font-weight: 500;
+    transition: .3s;
+}
+.navbar__link:hover {
+    color: #F35F2F;
+}
+.navbar__btn button {
+    padding: 12px 24px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(#F35F2FBF, #F35F2F);
+    color: #fff;
+}
+.navbar__menu {
+    display: none;
+}
+/* HERO QISMI  */
+.hero__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 82px;
+    margin-top: 134px;
+}
+.hero__wrapper, .hero__image {
+    width: 100%;
+}
+.hero__text h2 {
+    font-size: 72px;
+    font-weight: 500;
+    color: #3D3D3F;
+}
+.hero__text p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #3D3D3F;
+    margin-top: 42px;
+}
+.hero__text button {
+    padding: 14px 28px;
+    background: linear-gradient(#F35F2FBF, #F35F2F);    
+    color: #fff;
+    border: none;
+    margin-top: 40px;
+    border-radius: 5px;
+    margin-bottom: 149px;
+}
+.hero__image {
+    margin-bottom: 149px;
+}
+/* SERVICE QISMI  */
+.service__info h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #3D3D3F;
+    margin-bottom: 55px;
+}
+.service__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 230px;
+    border: 1px solid #EBEBEBCC;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    background-color:#F8F9FE;
+}
+.service__card {
+    text-align: center;
+    /* border-right: 1px solid #EBEBEBCC; */
+    padding-right: 50px;
+}
+.service__card:nth-child(3) {
+    border-right: none;
+}
+.service__card h3 {
+    margin-top: 23px;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 13px;
+    color: #3D3D3F;
+}
+.service__card p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #3D3D3F;
+}
+/* OFFERING QISMI  */
+.offering {
+    padding: 60px 0;
+    text-align: center;
+}
+.offering__info h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.offering__wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.offering__card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.offering__card:hover {
+    transform: translateY(-10px);
+}
+.offering__image img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+.offering__text h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.offering__text p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.offering__btn {
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+.offering__btn {
+    translate: 100px 0px;
+}
+.offering__btn:hover {
+    background-color: #ff7043;
+    color: white;
+}
+.active__image {
+    background-color: #898989;
+    border-radius: 5px;
+}
+/* PROJECTS QISMI  */
+.projects__info {
+    margin-top: 120px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: #3D3D3F;
+    margin-bottom: 55px;
+}
+.projects__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.projects__image img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.projects__card h4 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #3D3D3F;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.projects__btn button{
+    translate:540px 0px;
+    margin-top: 74px;
+    padding: 14px 25px;
+    background: linear-gradient(#F35F2FBF, #F35F2F);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 120px;
+}
+/* TEAM QISMI  */
+.team__info h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+.team__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    margin-bottom: 120px;
+}
+.team__card {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #EEEFF1;
+    text-align: center;
+}
+.team__text h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #3D3D3F;
+    margin-top: 18px;
+    margin-bottom: 1px;
+}
+.team__text p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999999;
+    margin-bottom: 17px;
+}
+.social {
+    translate: -8px 0px;
+}
+.fa-brands {
+    font-size: 25px;
+    margin-left: 11px;
+}
