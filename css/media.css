@@ -72,6 +72,11 @@
         align-items: center;
         gap: 20px; 
     }
+    .team__wrapper {
+        flex-direction: column; 
+        gap: 15px; 
+        align-items: center; 
+    }
 }
 .fa-brands {
     font-size: 20px;
@@ -81,12 +86,12 @@
 
 @media (max-width: 480px) {
     .hero__text h2 {
-        font-size: 24px; 
+        font-size: 38px; 
         text-align: center; 
     }
 
     .hero__text p {
-        font-size: 12px; 
+        font-size: 18px; 
         text-align: center; 
         padding: 0 10px;
     }
@@ -130,25 +135,25 @@
         padding: 10px 20px; 
         font-size: 14px; 
         width: auto; 
+        
     }
-}
-
     .projects__btn {
         display: flex; 
         justify-content: center; 
         width: 100%; 
         margin-top: 20px; 
     }
-
+    
     .projects__btn button {
         padding: 10px 20px; 
         font-size: 14px;
         width: auto; 
         margin: 0; 
     }
-
+    
     .team__wrapper {
-        flex-direction: row; 
+        flex-direction: column; 
         gap: 15px; 
         align-items: center; 
     }
+}
